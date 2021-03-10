@@ -38,20 +38,20 @@ ENV USER_GID=$USER_UID
 ENV USER_GROUP="users"
 
 # Create the user
-#RUN mkdir /localhome/$USER_NAME 
-RUN useradd -l -d /localhome/$USER_NAME -u $USER_UID -g $USER_GROUP $USER_NAME
+RUN mkdir /home/$USER_NAME
+RUN useradd -l -d /home/$USER_NAME -u $USER_UID -g $USER_GROUP $USER_NAME
 
 # Setup VSCode stuff (comment when not using vscode)
-RUN mkdir /localhome/$USER_NAME/.vscode-server 
-RUN mkdir /localhome/$USER_NAME/.vscode-server-insiders
+# RUN mkdir /home/$USER_NAME/.vscode-server 
+# RUN mkdir /home/$USER_NAME/.vscode-server-insiders
 
 # Change owner of home dir
-RUN chown -R ${USER_UID}:${USER_GID} /localhome/$USER_NAME/
+RUN chown -R ${USER_UID}:${USER_GID} /home/$USER_NAME/
 
 # Set workdir when starting container
-WORKDIR /localhome/$USER_NAME/Vision-Project-Image-Segmentation
+WORKDIR /Vision-Project-Image-Segmentation
 
 # Add workdir to PYTHONPATH
-ENV PYTHONPATH="$PYTHONPATH:/localhome/$USER_NAME"
+ENV PYTHONPATH="$PYTHONPATH:/Vision-Project-Image-Segmentation"
 
 CMD ["/bin/bash"]
