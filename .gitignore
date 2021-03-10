@@ -1,10 +1,14 @@
 # Project exclude paths
 /venv/
+
+# Training Data
 VOCtrainval_11-May-2012.tar
 VOCdevkit
 **/data
+
+# Jupyter Notebook Checkpoints
 **/.ipynb_checkpoints
 
 # IDE folders
 *.code-workspace
-*.idea
+*.idea/
