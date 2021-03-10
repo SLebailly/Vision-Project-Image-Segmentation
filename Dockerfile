@@ -11,6 +11,7 @@ ENV CUDA_HOME=/usr/local/cuda
 # Install additional programs
 RUN apt update && \
     apt install -y build-essential \
+                   gfortran \
                    htop \
                    git \
                    curl \
