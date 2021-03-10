@@ -28,7 +28,7 @@ ENV LANG C.UTF-8
 
 # Install dependencies
 RUN python3 -m pip install pybind11
-RUN python3 -m pip install scipy
+RUN python3 -m pip install scipy==1.1.0
 
 # Specify a new user (USER_NAME and USER_UID are specified via --build-arg)
 ARG USER_UID
@@ -37,7 +37,7 @@ ENV USER_GID=$USER_UID
 ENV USER_GROUP="users"
 
 # Create the user
-RUN mkdir /localhome/$USER_NAME 
+#RUN mkdir /localhome/$USER_NAME 
 RUN useradd -l -d /localhome/$USER_NAME -u $USER_UID -g $USER_GROUP $USER_NAME
 
 # Setup VSCode stuff (comment when not using vscode)
