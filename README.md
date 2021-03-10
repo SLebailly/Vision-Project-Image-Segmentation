@@ -1,6 +1,9 @@
 # Vision-Project-Image-Segmentation
 Starting code for the vision task.
 
+# Connect to SSH
+ssh s9sileba@thor.cs.uni-saarland.de
+
 # How to build the docker:
 docker build -f ./Dockerfile --build-arg USER_GID=$(id -g) --build-arg USER_UID=$(id -u) --build-arg USER_NAME=$(id -un) -t vision-project-image-segmentation:latest .
 
