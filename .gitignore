@@ -11,4 +11,4 @@ VOCdevkit
 
 # IDE folders
 *.code-workspace
-*.idea/
+*/.idea/
