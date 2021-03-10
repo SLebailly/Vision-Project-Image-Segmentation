@@ -11,7 +11,7 @@ VOCdevkit
 
 # IDE folders
 *.code-workspace
-.idea
+.idea/
 
 task_1_model_parameters.pt
 task_2_model_parameters.pt
