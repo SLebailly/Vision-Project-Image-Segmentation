@@ -13,4 +13,6 @@ VOCdevkit
 *.code-workspace
 .idea
 
+task_1_model_parameters.pt
 task_2_model_parameters.pt
+task_3_model_parameters.pt
