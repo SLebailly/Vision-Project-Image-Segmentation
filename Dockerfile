@@ -3,7 +3,7 @@
 ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:21.02-py3
 FROM $BASE_IMAGE
 ARG BASE_IMAGE
-LABEL repository="nn_vcproject"
+LABEL repository="Vision-Project-Image-Segmentation"
 
 # Set path to CUDA
 ENV CUDA_HOME=/usr/local/cuda
@@ -47,7 +47,7 @@ RUN mkdir /raid/$USER_NAME/.vscode-server-insiders
 RUN chown -R ${USER_UID}:${USER_GID} /localhome/$USER_NAME/
 
 # Set workdir when starting container
-WORKDIR /localhome/$USER_NAME
+WORKDIR /localhome/$USER_NAME/Vision-Project-Image-Segmentation
 
 # Add workdir to PYTHONPATH
 ENV PYTHONPATH="$PYTHONPATH:/localhome/$USER_NAME"
