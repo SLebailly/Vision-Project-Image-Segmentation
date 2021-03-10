@@ -27,8 +27,8 @@ RUN SHA=ToUcHMe python3 -m pip install --upgrade pip
 ENV LANG C.UTF-8
 
 # Install dependencies
-RUN python3 -m pip install pybind11
-RUN python3 -m pip install scipy==1.1.0
+RUN python3 -m pip install --no-cache-dir \
+      numpy scipy==1.1.0
 
 # Specify a new user (USER_NAME and USER_UID are specified via --build-arg)
 ARG USER_UID
