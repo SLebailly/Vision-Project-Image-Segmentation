@@ -42,8 +42,8 @@ ENV USER_GROUP="users"
 RUN useradd -l -d /localhome/$USER_NAME -u $USER_UID -g $USER_GROUP $USER_NAME
 
 # Setup VSCode stuff (comment when not using vscode)
-RUN mkdir /raid/$USER_NAME/.vscode-server 
-RUN mkdir /raid/$USER_NAME/.vscode-server-insiders
+RUN mkdir /localhome/$USER_NAME/.vscode-server 
+RUN mkdir /localhome/$USER_NAME/.vscode-server-insiders
 
 # Change owner of home dir
 RUN chown -R ${USER_UID}:${USER_GID} /localhome/$USER_NAME/
