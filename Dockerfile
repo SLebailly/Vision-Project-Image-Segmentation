@@ -23,6 +23,7 @@ RUN apt update && \
 # Update pip
 RUN SHA=ToUcHMe which python3
 RUN SHA=ToUcHMe python3 -m pip install --upgrade pip
+RUN SHA=ToUcHMe pip3 install --upgrade pip
 
 # See http://bugs.python.org/issue19846
 ENV LANG C.UTF-8
