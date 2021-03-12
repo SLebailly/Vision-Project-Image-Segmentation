@@ -1,6 +1,6 @@
 # Base image must at least have pytorch and CUDA installed.
 # We are using NVIDIA NGC's PyTorch image here, see for latest version: https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
-ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:21.02-py3
+ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:20.12-py3
 FROM $BASE_IMAGE
 ARG BASE_IMAGE
 LABEL repository="Vision-Project-Image-Segmentation"
