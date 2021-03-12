@@ -4,4 +4,4 @@ export PYTHONPATH="$PYTHONPATH:/Vision-Project-Image-Segmentation"
 # Passed as arguments
 export CUDA_VISIBLE_DEVICES=$3
 
-python Vision_task_2.ipynb
+python src/Vision_task_2.ipynb
