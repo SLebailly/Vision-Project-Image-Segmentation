@@ -8,7 +8,7 @@ ssh s9sileba@thor.cs.uni-saarland.de
 docker build -f ./Dockerfile --build-arg USER_GID=$(id -g) --build-arg USER_UID=$(id -u) --build-arg USER_NAME=$(id -un) -t vision-project-image-segmentation:latest .
 
 # How to launch the docker:
-docker run -it --rm --runtime=nvidia --pid=host --ipc=host --user=s9sileba -v $(pwd):/src vision-project-image-segmentation:latest
+docker run -it --rm --runtime=nvidia --pid=host --ipc=host --user=s9sileba -v $(pwd):/Vision-Project-Image-Segmentation vision-project-image-segmentation:latest
 add all volumes that need to be mounted with "-v {path/to/raid/folder}:/{volume_name}"after --user=s9sileba
 folders need to exist BEFORE mounting them!!!
 

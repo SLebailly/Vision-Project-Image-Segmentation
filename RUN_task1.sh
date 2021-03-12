@@ -6,4 +6,4 @@ export CUDA_VISIBLE_DEVICES=$3
 
 dir
 
-python src/Vision_task_1.ipynb
+python Vision_task_1.ipynb
