@@ -29,7 +29,7 @@ ENV LANG C.UTF-8
 
 # Install dependencies
 RUN python3 -m pip install --no-cache-dir \
-      numpy scipy
+      numpy scipy==1.1.0
 
 # Specify a new user (USER_NAME and USER_UID are specified via --build-arg)
 ARG USER_UID
