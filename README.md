@@ -20,6 +20,7 @@ docker run -it --rm --runtime=nvidia --pid=host --ipc=host --user=s9sileba -v $(
 # Run the code
 bash run.sh
 change the CUDA gpu with CUDA_VISIBLE_DEVICES={0,...,7} in the run.sh file
+Access the Jupyter Notebook from your local pc at localhost:8890
 
 # More Docker Info
 You can leave the container (without removing it) by: CTRL + p + q
