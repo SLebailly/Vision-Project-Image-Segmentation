@@ -15,6 +15,7 @@ RUN apt update && \
                    htop \
                    git \
                    curl \
+                   ipywidgets \
                    ca-certificates \
                    vim \
                    tmux && \
