@@ -1,4 +1,7 @@
+import os
 import torch
+import time
+import sys
 
 print("testing availability of CUDA...")
 print(torch.cuda.device_count())
