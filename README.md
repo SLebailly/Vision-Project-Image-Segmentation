@@ -18,9 +18,8 @@ docker run -it --rm --runtime=nvidia --pid=host --ipc=host --user=s9sileba -v $(
 
 
 # Run the code
-run the RUN_{task}.sh file with
-bash RUN_{task}.sh
-change the CUDA gpu with CUDA_VISIBLE_DEVICES={0,...,7} in the RUN_{task}.sh file
+bash run.sh
+change the CUDA gpu with CUDA_VISIBLE_DEVICES={0,...,7} in the run.sh file
 
 # More Docker Info
 You can leave the container (without removing it) by: CTRL + p + q
