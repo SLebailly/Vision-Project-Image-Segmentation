@@ -53,5 +53,6 @@ WORKDIR /Vision-Project-Image-Segmentation
 
 # Add workdir to PYTHONPATH
 ENV PYTHONPATH="$PYTHONPATH:/Vision-Project-Image-Segmentation"
+ENV JUPYTER_CONFIG_DIR="$PYTHONPATH:/Vision-Project-Image-Segmentation"
 
 CMD ["/bin/bash"]
