@@ -2,7 +2,7 @@
 Starting code for the vision task.
 
 # Connect to SSH
-ssh -L 8890:localhost:8890 s9sileba@thor.cs.uni-saarland.de
+ssh -L 8890:localhost:8890 s9sileba@idun.cs.uni-saarland.de
 
 # How to build the docker:
 docker build -f ./Dockerfile --build-arg USER_GID=$(id -g) --build-arg USER_UID=$(id -u) --build-arg USER_NAME=$(id -un) -t vision-project-image-segmentation:latest .
